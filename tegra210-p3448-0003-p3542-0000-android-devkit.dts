@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p3541-0000.dts"
+#include "tegra210-porg-common.dtsi"
+#include "tegra210-batuu-pinmux-p3448-0003.dtsi"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+	firmware {
+		android {
+			compatible = "android,firmware";
+			hardware = "batuu";
+			boot_devices = "700b0000.mmc";
+		};
+	};
+};

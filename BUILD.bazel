@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 
+load("@rules_devicetree//devicetree:dtb.bzl", "dtb")
 load("@rules_devicetree//devicetree:devicetree_library.bzl", "devicetree_library")
 
 package(default_visibility = ["//vendor/nvidia:__subpackages__"])
@@ -11,4 +12,65 @@ devicetree_library(
         "*.dts",
     ]),
     includes = ["."],
+)
+
+dtb(
+    name = "tegra210-p3448-0000-p3449-0000-a02-android-devkit.dtb",
+    srcs = ["tegra210-p3448-0000-p3449-0000-a02-android-devkit.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-p3448-0002-p3449-0000-a02-android-devkit.dtb",
+    srcs = ["tegra210-p3448-0002-p3449-0000-a02-android-devkit.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-p3448-0000-p3449-0000-b00-android-devkit.dtb",
+    srcs = ["tegra210-p3448-0000-p3449-0000-b00-android-devkit.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-p3448-0002-p3449-0000-b00-android-devkit.dtb",
+    srcs = ["tegra210-p3448-0002-p3449-0000-b00-android-devkit.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-p3448-0003-p3542-0000-android-devkit.dtb",
+    srcs = ["tegra210-p3448-0003-p3542-0000-android-devkit.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+filegroup(
+    name = "dtbs",
+    srcs = [
+        "tegra210-p3448-0000-p3449-0000-a02-android-devkit.dtb",
+        "tegra210-p3448-0002-p3449-0000-a02-android-devkit.dtb",
+        "tegra210-p3448-0000-p3449-0000-b00-android-devkit.dtb",
+        "tegra210-p3448-0002-p3449-0000-b00-android-devkit.dtb",
+        "tegra210-p3448-0003-p3542-0000-android-devkit.dtb",
+    ],
 )
