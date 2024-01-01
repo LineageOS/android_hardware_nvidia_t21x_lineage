@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p3450-0000.dts"
+#include "tegra210-porg-common.dtsi"
+#include "tegra210-porg-pinmux-p3448-0000-a02.dtsi"
