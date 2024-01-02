@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p2571-0930.dts"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+	firmware {
+		android {
+			compatible = "android,firmware";
+			hardware = "foster_e";
+			boot_devices = "700b0600.mmc";
+		};
+	};
+
+	pinmux@700008d4 {
+		pinctrl-names = "default";
+	};
+};
