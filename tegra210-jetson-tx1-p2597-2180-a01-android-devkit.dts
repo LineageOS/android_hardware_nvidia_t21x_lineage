@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p2371-2180.dts"
+#include "tegra210-lineage.dtsi"
+
+/ {
+};
