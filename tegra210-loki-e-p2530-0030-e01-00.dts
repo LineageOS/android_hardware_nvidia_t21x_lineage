@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p2523.dtsi"
+
+/ {
+        model = "NVIDIA Shield Portable";
+        compatible = "nvidia,p2523-0030", "nvidia,tegra210";
+};
