@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p2523-0030.dts"
+#include "tegra210-p2523.dtsi"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+        model = "NVIDIA Shield Portable";
+
+	firmware {
+		android {
+			compatible = "android,firmware";
+			hardware = "loki_e_wifi";
+			boot_devices = "700b0600.mmc";
+		};
+	};
+};

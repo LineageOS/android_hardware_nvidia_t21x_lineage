@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/ {
+	pinmux@700008d4 {
+		pinctrl-names = "default";
+	};
+};

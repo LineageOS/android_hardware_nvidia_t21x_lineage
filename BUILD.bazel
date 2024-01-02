@@ -84,6 +84,66 @@ dtb(
     ],
 )
 
+dtb(
+    name = "tegra210-loki-e-p2530-0030-e01-00.dtb",
+    srcs = ["tegra210-loki-e-p2530-0030-e01-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-loki-e-p2530-0030-e02-00.dtb",
+    srcs = ["tegra210-loki-e-p2530-0030-e02-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-loki-e-p2530-0030-e03-00.dtb",
+    srcs = ["tegra210-loki-e-p2530-0030-e03-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-loki-e-p2530-0031-e01-00.dtb",
+    srcs = ["tegra210-loki-e-p2530-0031-e01-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-loki-e-p2530-0031-e02-00.dtb",
+    srcs = ["tegra210-loki-e-p2530-0031-e02-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210-loki-e-p2530-0031-e03-00.dtb",
+    srcs = ["tegra210-loki-e-p2530-0031-e03-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
 filegroup(
     name = "dtbs",
     srcs = [
@@ -94,5 +154,12 @@ filegroup(
         "tegra210-p3448-0000-p3449-0000-b00-android-devkit.dtb",
         "tegra210-p3448-0002-p3449-0000-b00-android-devkit.dtb",
         "tegra210-p3448-0003-p3542-0000-android-devkit.dtb",
+
+        "tegra210-loki-e-p2530-0030-e01-00.dtb",
+        "tegra210-loki-e-p2530-0030-e02-00.dtb",
+        "tegra210-loki-e-p2530-0030-e03-00.dtb",
+        "tegra210-loki-e-p2530-0031-e01-00.dtb",
+        "tegra210-loki-e-p2530-0031-e02-00.dtb",
+        "tegra210-loki-e-p2530-0031-e03-00.dtb",
     ],
 )

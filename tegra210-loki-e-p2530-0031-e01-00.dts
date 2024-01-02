@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-loki-e-p2530-0030-e01-00.dts"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+        compatible = "nvidia,p2523-0031", "nvidia,tegra210";
+
+	firmware {
+		android {
+			hardware = "loki_e_lte";
+		};
+	};
+};
