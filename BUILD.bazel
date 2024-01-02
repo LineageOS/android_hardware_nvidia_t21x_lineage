@@ -234,6 +234,36 @@ dtb(
     ],
 )
 
+dtb(
+    name = "tegra210b01-darcy-p2894-0050-a08-00.dtb",
+    srcs = ["tegra210b01-darcy-p2894-0050-a08-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210b01-darcy-p2894-2551-b00-00.dtb",
+    srcs = ["tegra210b01-darcy-p2894-2551-b00-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210b01-darcy-p2894-3551-b03-00.dtb",
+    srcs = ["tegra210b01-darcy-p2894-3551-b03-00.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
 filegroup(
     name = "dtbs",
     srcs = [
@@ -260,5 +290,9 @@ filegroup(
         "tegra210-loki-e-p2530-0031-e01-00.dtb",
         "tegra210-loki-e-p2530-0031-e02-00.dtb",
         "tegra210-loki-e-p2530-0031-e03-00.dtb",
+
+        "tegra210b01-darcy-p2894-0050-a08-00.dtb",
+        "tegra210b01-darcy-p2894-2551-b00-00.dtb",
+        "tegra210b01-darcy-p2894-3551-b03-00.dtb",
     ],
 )

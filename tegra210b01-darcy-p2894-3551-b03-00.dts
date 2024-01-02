@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210b01-darcy-p2894-2551-b00-00.dts"
+#include "tegra210-lineage.dtsi"
+
+/ {
+	i2c@7000d000 {
+		pmic@3c {
+			regulators {
+				sd2 {
+					regulator-min-microvolt = <3000000>;
+					regulator-max-microvolt = <3000000>;
+				};
+			};
+		};
+	};
+
+};
