@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-p2371-2180.dts"
+#include "tegra210-lineage.dtsi"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+	firmware {
+		android {
+			compatible = "android,firmware";
+			hardware = "jetson_cv";
+			boot_devices = "700b0600.mmc";
+		};
+	};
+
+	pinmux@700008d4 {
+		pinctrl-names = "default";
+	};
+};
