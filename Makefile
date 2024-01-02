@@ -14,6 +14,11 @@ dtb-y += tegra210-p3448-0000-p3449-0000-b00-android-devkit.dtb
 dtb-y += tegra210-p3448-0002-p3449-0000-b00-android-devkit.dtb
 dtb-y += tegra210-p3448-0003-p3542-0000-android-devkit.dtb
 
+dtb-y += tegra210-foster-e-hdd-p2530-0932-e01-00.dtb
+dtb-y += tegra210-foster-e-hdd-p2530-0932-e02-00.dtb
+dtb-y += tegra210-foster-e-hdd-cpc-p2530-0933-e03-00.dtb
+dtb-y += tegra210-foster-e-p2530-0930-e01-00.dtb
+dtb-y += tegra210-foster-e-p2530-0930-e02-00.dtb
 dtb-y += tegra210-loki-e-p2530-0030-e01-00.dtb
 dtb-y += tegra210-loki-e-p2530-0030-e02-00.dtb
 dtb-y += tegra210-loki-e-p2530-0030-e03-00.dtb

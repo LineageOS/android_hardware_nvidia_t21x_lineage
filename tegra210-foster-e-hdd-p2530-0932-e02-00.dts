@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-foster-e-hdd-p2530-0932-e01-00.dts"
+
+/ {
+};
