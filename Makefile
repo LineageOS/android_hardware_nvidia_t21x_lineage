@@ -33,6 +33,9 @@ dtb-y += tegra210-loki-e-p2530-0031-e03-00.dtb
 dtb-y += tegra210b01-darcy-p2894-0050-a08-00.dtb
 dtb-y += tegra210b01-darcy-p2894-2551-b00-00.dtb
 dtb-y += tegra210b01-darcy-p2894-3551-b03-00.dtb
+dtb-y += tegra210b01-sif-p3425-0500-a01.dtb
+dtb-y += tegra210b01-sif-p3425-0500-a02.dtb
+dtb-y += tegra210b01-sif-p3425-0500-a04.dtb
 
 ifneq ($(dtb-y),)
 dtb-y := $(addprefix $(makefile-path)/,$(dtb-y))

@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210b01-sif-p3425-0500-a01.dts"
+
+/ {
+};
