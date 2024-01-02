@@ -264,6 +264,36 @@ dtb(
     ],
 )
 
+dtb(
+    name = "tegra210b01-sif-p3425-0500-a01.dtb",
+    srcs = ["tegra210b01-sif-p3425-0500-a01.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210b01-sif-p3425-0500-a02.dtb",
+    srcs = ["tegra210b01-sif-p3425-0500-a02.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
+dtb(
+    name = "tegra210b01-sif-p3425-0500-a04.dtb",
+    srcs = ["tegra210b01-sif-p3425-0500-a04.dts"],
+    generate_symbols = True,
+    deps = [
+        ":all_t21x_dtsi",
+        "//vendor/nvidia/kernel:all_nvidia_dts",
+    ],
+)
+
 filegroup(
     name = "dtbs",
     srcs = [
@@ -294,5 +324,8 @@ filegroup(
         "tegra210b01-darcy-p2894-0050-a08-00.dtb",
         "tegra210b01-darcy-p2894-2551-b00-00.dtb",
         "tegra210b01-darcy-p2894-3551-b03-00.dtb",
+        "tegra210b01-sif-p3425-0500-a01.dtb",
+        "tegra210b01-sif-p3425-0500-a02.dtb",
+        "tegra210b01-sif-p3425-0500-a04.dtb",
     ],
 )
