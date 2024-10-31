@@ -37,6 +37,8 @@ dtb-y += tegra210b01-sif-p3425-0500-a01.dtb
 dtb-y += tegra210b01-sif-p3425-0500-a02.dtb
 dtb-y += tegra210b01-sif-p3425-0500-a04.dtb
 
+dtb-y += tegra210-smaug-android.dtb
+
 ifneq ($(dtb-y),)
 dtb-y := $(addprefix $(makefile-path)/,$(dtb-y))
 endif

@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-smaug.dts"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+	firmware {
+		android {
+			compatible = "android,firmware";
+			hardware = "dragon";
+			boot_devices = "700b0000.mmc";
+		};
+	};
+};
