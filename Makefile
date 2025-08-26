@@ -6,6 +6,7 @@ dtb-y :=
 dtbo-y :=
 makefile-path := t21x/lineage
 
+dtb-y += tegra210-baracus.dtb
 dtb-y += tegra210-jetson-tx1-p2597-2180-a01-android-devkit.dtb
 dtb-y += tegra210-p3448-0000-p3449-0000-a02-android-devkit.dtb
 dtb-y += tegra210-p3448-0002-p3449-0000-a02-android-devkit.dtb

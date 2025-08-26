@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-FileCopyrightText: Copyright (C) 2024 The LineageOS Project
+
+/dts-v1/;
+
+#include "tegra210-jetson-tx1-p2597-2180-a01-android-devkit.dts"
+
+/ {
+	firmware {
+		android {
+			hardware = "baracus";
+		};
+	};
+};
