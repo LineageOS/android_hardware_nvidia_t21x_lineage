@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+load("@rules_devicetree//devicetree:devicetree_library.bzl", "devicetree_library")
+
+package(default_visibility = ["//vendor/nvidia:__subpackages__"])
+
+devicetree_library(
+    name = "all_t21x_dtsi",
+    hdrs = glob([
+        "*.dtsi",
+        "*.dts",
+    ]),
+    includes = ["."],
+)
